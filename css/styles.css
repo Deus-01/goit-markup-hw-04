@@ -172,10 +172,9 @@ body {
     url(../images/main/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   padding: 188px 0;
   text-align: center;
-  background-attachment: fixed;
 }
 
 .hero-button {
@@ -324,12 +323,10 @@ body {
 .social-list {
   width: 40px;
   height: 40px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
 }
 
-.our-head .social-list:hover,
-.our-head .social-links:focus {
+.social-links:hover,
+.social-links:focus {
   background-color: var(--secondbgcbtn);
 }
 
@@ -345,6 +342,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /*--------------------- Customers */
@@ -366,7 +365,7 @@ body {
   border: 1px solid var(--secondbgcbtn);
 }
 
-.custom-list:hover .custom-icon,
+.custom-link:hover .custom-icon,
 .custom-link:focus .custom-icon {
   fill: var(--secondbgcbtn);
 }
@@ -432,11 +431,11 @@ body {
   gap: 16px;
 }
 
-.socials .social-list {
+.socials .social-links {
   background-color: var(--bgcsocial);
 }
 
-.socials .social-list:hover,
+.socials .social-links:hover,
 .socials .social-links:focus {
   background-color: var(--secondbgcsocial);
 }
@@ -499,7 +498,8 @@ body {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
-.cards:hover .project-head {
+.project-link:hover .project-head,
+.project-link:focus .project-head {
   border-left: 1px solid var(--secondbgc);
   border-right: 1px solid var(--secondbgc);
   border-bottom: 1px solid var(--secondbgc);
